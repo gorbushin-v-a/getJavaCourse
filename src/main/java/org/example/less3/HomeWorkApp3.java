@@ -47,12 +47,18 @@ public class HomeWorkApp3 {
         System.out.println("\nexercise4");
         exercise4();
         System.out.println("exercise5");
-        int[] arr = exercise5(4, 5);
-        for (int num : arr) {
+        int[] arr5 = exercise5(4, 5);
+        for (int num : arr5) {
             System.out.print(num+" ");
         }
         System.out.println("\nexercise6");
         exercise6();
+        System.out.println("exercise7");
+        int[] arr7 = { 2, 2, 2, 1, 2, 2, 10, 1 };
+        System.out.println(exercise7(arr7));
+        System.out.println("exercise8");
+        int[] arr8 = { 1, 2, 3, 4, 5, 6, 7, 8 };
+        System.out.println(Arrays.toString(exercise8(arr8, -3)));
     }
 
     private static void exercise1() {
@@ -103,7 +109,7 @@ public class HomeWorkApp3 {
             for (int num : line) {
                 System.out.print(num+" ");
             }
-            System.out.println("\n");
+            System.out.print("\n");
         }
     }
 
@@ -122,11 +128,39 @@ public class HomeWorkApp3 {
 
     }
 
-    private static void exercise7() {
-
+    // checkBalance
+    private static boolean exercise7(int[] arr) {
+        int rightSum = 0;
+        int leftSum = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            rightSum += arr[i];
+        }
+        for (int i = 1; i < arr.length; i++) {
+            if (leftSum == rightSum) {
+                return true;
+            }
+            leftSum += arr[i];
+            rightSum -= arr[i];
+            System.out.print("");
+        }
+        return false;
     }
 
-    private static void exercise8() {
-
+    private static int[] exercise8(int[] arr, int n) {
+        if (n < 0) {
+            n += arr.length;
+        }
+        int curr; // сохраняемое значение
+        int insertValue; // вставляемое значение
+        for (int i = 0; i < n; i++) {
+            curr = arr[0];
+            for (int j = 0; j < arr.length-1; j++) {
+                insertValue = curr;
+                curr = arr[j+1];
+                arr[j+1] = insertValue;
+            }
+            arr[0] = curr;
+        }
+        return arr;
     }
 }
