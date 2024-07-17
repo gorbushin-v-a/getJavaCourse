@@ -1,4 +1,4 @@
-package org.example.less3;
+package org.example.level1.less3;
 
 import java.util.Arrays;
 

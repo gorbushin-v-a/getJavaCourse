@@ -1,4 +1,4 @@
-package org.example.less2;
+package org.example.level1.less2;
 
 /*
 1 Написать метод, принимающий на вход два целых числа и проверяющий, что их сумма лежит

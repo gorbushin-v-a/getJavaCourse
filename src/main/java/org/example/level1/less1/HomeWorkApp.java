@@ -1,4 +1,4 @@
-package org.example.less1;
+package org.example.level1.less1;
 
 /*
 1 Создать пустой проект в IntelliJ IDEA, создать класс HomeWorkApp, и прописать в нем

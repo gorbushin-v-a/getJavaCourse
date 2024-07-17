@@ -1,4 +1,4 @@
-package org.example.less5;
+package org.example.level1.less5;
 
 /*
 1 Создать класс "Сотрудник" с полями: ФИО, должность, email, телефон, зарплата, возраст.

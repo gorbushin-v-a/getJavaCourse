@@ -1,4 +1,4 @@
-package org.example.less5;
+package org.example.level1.less5;
 
 public class Person {
     private final String name;

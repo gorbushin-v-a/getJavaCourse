@@ -1,4 +1,4 @@
-package org.example.less8;
+package org.example.level1.less8;
 
 import javax.swing.*;
 import java.awt.*;

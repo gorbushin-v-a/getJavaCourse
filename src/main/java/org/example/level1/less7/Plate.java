@@ -1,4 +1,4 @@
-package org.example.less7;
+package org.example.level1.less7;
 
 public final class Plate {
     private int food;

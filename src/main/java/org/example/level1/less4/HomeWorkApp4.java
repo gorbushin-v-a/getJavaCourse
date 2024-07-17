@@ -1,4 +1,4 @@
-package org.example.less4;
+package org.example.level1.less4;
 
 import java.util.Random;
 import java.util.Scanner;

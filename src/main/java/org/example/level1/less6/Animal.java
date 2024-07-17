@@ -1,4 +1,4 @@
-package org.example.less6;
+package org.example.level1.less6;
 
 public abstract class Animal {
     protected String name;
